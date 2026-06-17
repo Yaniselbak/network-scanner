@@ -17,7 +17,7 @@ LOGS = """
 203.0.113.42 - - [17/Jun/2026:09:00:01] "GET /secret HTTP/1.1" 403
 """
 
-# Seuils d'alerte
+
 SEUIL_404 = 3   # Plus de 3 erreurs 404 = scan de répertoires
 SEUIL_401 = 3   # Plus de 3 échecs login = brute force
 
@@ -48,7 +48,7 @@ def analyser_logs(logs):
             elif code == "401":
                 erreurs_401[ip] += 1
     
-    # Rapport
+    
     print("🌐 Activité par IP :")
     for ip, count in toutes_ips.most_common():
         print(f"  {ip:15} → {count} requête(s)")
