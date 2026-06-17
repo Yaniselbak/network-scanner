@@ -1,13 +1,10 @@
 # Network Scanner 🔍
 
-Scanner de ports avec détection de services, développé à des fins éducatives.
+## Outils disponibles
 
-## Fonctionnalités
-- Scan TCP multi-threadé
-- Détection de bannières (SSH, HTTP, FTP...)
-- Identification des services courants
+### 🔍 scanner.py
+Scanner de ports TCP avec détection de bannières et multithreading.
 
-## Usage
-python scanner.py
-
-⚠️ À utiliser uniquement sur son propre réseau ou avec autorisation explicite.
+### 📋 log_analyzer.py
+Analyseur de logs Apache/Nginx — détecte les attaques brute force 
+et les scans de répertoires.
