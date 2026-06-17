@@ -39,4 +39,4 @@ def scan(host, ports):
             ouverts.append(port)
     print(f"\n→ {len(ouverts)} port(s) ouvert(s) sur {host}")
 
-scan("192.168.1.1", range(1, 1025))
+scan("scanme.nmap.org", range(1, 1025))
