@@ -54,14 +54,16 @@ python scanner.py scanme.nmap.org --top -o resultats.json
 | `-o`, `--output` | Fichier de sortie `.json` ou `.csv` | — |
 
 ### Exemple de résultat
+Test en local : un petit serveur web lancé avec `python -m http.server 8080`, puis scanné.
 ```
-🔍 Scan de scanme.nmap.org (45.33.32.156) — 24 port(s)
+$ python scanner.py 127.0.0.1 --top
+
+🔍 Scan de 127.0.0.1 (127.0.0.1) — 24 port(s)
 ⚠️  Ne scannez que des cibles pour lesquelles vous êtes autorisé.
 ------------------------------------------------------------
-✅ Port 22    | SSH        | SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2.13
-✅ Port 80    | HTTP       | HTTP/1.1 200 OK
+✅ Port 8080  | HTTP-alt   | HTTP/1.0 200 OK
 ------------------------------------------------------------
-→ 2 port(s) ouvert(s) sur scanme.nmap.org en 1.2 s
+→ 1 port(s) ouvert(s) sur 127.0.0.1 en 1.0 s
 ```
 
 ---
