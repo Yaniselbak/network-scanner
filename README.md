@@ -53,7 +53,7 @@ python scanner.py scanme.nmap.org --top -o resultats.json
 | `--timeout` | Délai d'attente par port (secondes) | `1` |
 | `-o`, `--output` | Fichier de sortie `.json` ou `.csv` | — |
 
-### Exemple de résultat
+### Résultat
 Test en local : un petit serveur web lancé avec `python -m http.server 8080`, puis scanné.
 ```
 $ python scanner.py 127.0.0.1 --top
@@ -95,7 +95,7 @@ python log_analyzer.py /var/log/nginx/access.log --seuil-404 10 --seuil-401 5 -o
 | `--seuil-401` | Nb de `401`/`403` pour signaler une force brute | `5` |
 | `-o`, `--output` | Exporter le rapport en JSON | — |
 
-### Exemple de résultat
+### Résultat
 ```
 📋 26 lignes analysées (0 ignorées)
 ------------------------------------------------------------
